@@ -1,26 +1,26 @@
 ***
-### Описание
-Репозиторий содержит программу, выполняющую функции сервера, способную выполнять команды:
-1. auth user pass — авторизация, user и pass хранятся в файле pass в каталоге запуска
-программы
-2. list — показать список файлов в каталоге запуска программы
-3. info file — напечатать сведения о файле, mime тип, размер, время создания
-4. retr file1 file2 file_n — передать файлы, указанные в строке.
-5. exit — выход
-6. help — справка по командам.
+### Description
+The repository contains a program that acts as a server, capable of executing commands:
+1. auth user pass - authorization, user and pass are stored in the pass file in the launch directory
+programs
+2. list - show a list of files in the program launch directory
+3. info file - print information about the file, mime type, size, creation time
+4. retr file1 file2 file_n - transfer the files specified in the line.
+5. exit - exit
+6. help - help on commands.
 
-Файл **pass** содержит 2 строки: логин и пароль пользователя для входа. [его наличие обязательно]
+The **pass** file contains 2 lines: username and password for login. [its presence is required]
 
 ---
 
-Чтобы скомпилировать программу при наличии python3 необходимо установить модуль pyinstaller.
+To compile the program with python3, you need to install the pyinstaller module.
 > **pip3 install pyinstaller**
 
-Компиляция программы выполняется в папке репозитория:
+The program is compiled in the repository folder:
 > **sh scripts/make.sh**
 
-Также, удаление лишних файлов, после сборки, проекта:
+Also, deleting unnecessary files, after assembly, of the project:
 > **sh scripts/clean.sh**
 
-Полное удаление файлов после сборки:
+Complete removal of files after build:
 > **sh scripts/fclean.sh**
